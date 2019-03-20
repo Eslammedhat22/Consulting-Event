@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position:relative;
+}
+body{
+    max-width: 1520px;
+    max-height: 2500px;
+    min-width: 300px;
+    width: 100%;
+    height: 1500px;
+}
+/* /////////////////////////////////////////////////////////////////////////////container\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+#container{
+    width: 90%;
+    height: 1500px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/* /////////////////////////////////////////////////////////////////////////////cover\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+#cover img{
+    max-width: 100%;
+    height: auto;
+}
+/* /////////////////////////////////////////////////////////////////////////////header\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+#header{
+    height: 120px;
+    background-color: black;
+}
+
+#header div
+{
+    float:left;
+}
+#header ul{
+    margin: 0;
+    padding: 0;
+}
+#header ul li{
+    list-style-type: none;
+    float: left;
+    display: block;
+    height: 120px;
+    width: 20%;
+    text-align: center;
+    line-height: 130px;
+}
+#header ul img{
+    width: 45%;
+    height: auto;
+}
+#header li a{
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 1.5em;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////gear\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.Gear
+{
+    width:10%;
+    height:120px;
+}
+.gear
+{
+    width:20%;
+    height:60px;
+    margin:18% 38%;
+}
+
+.gear:hover p
+{
+    animation:1s infinite linear;
+}
+
+.g
+{  
+    width:30px;
+    height:30px;
+    background:url(http://i.imgur.com/lOBxb.png);  
+    animation:2s infinite linear;
+}
+
+#g1
+{
+    left:24px;
+    top:15px;
+    animation-name:invertBarrelRoll;
+}
+
+#g2 
+{
+    animation-name:barrelRoll;
+}
+/* /////////////////////////////////////////////////////////////////////////////menu\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+#menu {
+    width: 70%;
+    height: 120px;
+    margin-left:5%;
+    margin-right:15%;
+}
+/* /////////////////////////////////////////////////////////////////////////////content\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+#Content{
+    width: 90%;
+    height: 600px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top:80px;
+}
+.circlecont{
+    width: 33.33333%;
+    height: 550px;
+    margin: 0 auto;
+    float: left;
+    display: block;
+}
+/* /////////////////////////////////////////////////////////////////////////////circles\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.circle{
+    width: 80%;
+    height: 320px ;
+    border-radius: 50%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 100px;
+    background-color: black;
+    color:#ffd530;
+    font-size:40px;
+    text-align: center;
+    line-height: 300px;
+    text-shadow: 2px 2px 5px #888;
+    border:#ffd530 solid ;
+    transition:all 0.5s ease-in;
+    animation: pulse 1s linear infinite;
+}
+.circle p{
+    animation: flash 1s linear infinite;
+}
+.circle p:hover{
+    animation: stop 5s ease infinite ;
+    opacity: 0;
+}
+/* /////////////////////////////////////////////////////////////////////////////footer\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+#footer{
+    height: 200px;
+    background-color:black;
+    clear: both;
+}
+#cpy{
+    width: 20%;
+    height: 50px;
+    float: left;
+    display: block;
+    margin-left: 42%;
+    margin-top: 90px; 
+}
+#footer p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    color: white;
+}
+#social{
+    width: 20%;
+    height: 200px;
+    margin-top: 50px;
+    float: right;
+    display: block;
+    margin: 0 auto;
+}
+#social ul{
+    margin-top: 15%;
+}
+#social ul li{
+    list-style-type: none;
+}
+.scl{
+    width: 15%;
+    height: 40px;
+    margin-left: 70%;
+}
+/* /////////////////////////////////////////////////////////////////////////////media query\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+@media screen and (max-width: 1199px){
+    .circlecont{
+        width: 50%;
+    }
+    .circlecont-second{
+        margin: 0;
+    }
+    #header ul li{
+        width: 20%;
+    }
+}
+@media screen and (max-width: 780px){
+    
+        .circlecont{
+            width: 80%;
+            margin-right: 0;
+            height: 400px;
+            margin-top: -40px;
+        }
+        
+        #footer{
+            display: none;
+        }
+    
+}
+@media screen and (max-width: 500px){
+    
+        .circlecont{
+            width: auto;
+            float: none;
+            margin-right: 0;
+            height: 300px;
+            margin-top: -40px;
+        }    
+        .scl{
+            display: none;
+        }
+}
+@media screen and (max-width: 1100px)
+{
+    .hidden{
+        display: none;
+    }
+    #menu li img{
+        widows: 50%;
+    }
+}
+/* /////////////////////////////////////////////////////////////////////////////Hover effects\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+#header li:hover{
+    transform: rotateZ(720deg);
+    background-color: #ffd530;
+    color: black;
+    transition: 1.5s;
+    border-radius: 50%;
+}
+#supplychain:hover{
+    background-image: url("sc.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transform: scale(1.3);
+    animation: stop 1s infinite ;
+}
+#lean:hover{
+    background-image: url("lean.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: scale(1.3);
+    animation: stop 1s infinite ;
+}
+#quality:hover{
+    background-image: url("quality.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: scale(1.3);
+    animation: stop 1s infinite ;
+}
+/* /////////////////////////////////////////////////////////////////////////////animations\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+@-webkit-keyframes flash{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+  @-webkit-keyframes pulse {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 1);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 40px rgba(204,169,44, 0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+    }
+  }
+
+@keyframes barrelRoll 
+{
+   from{transform:rotateZ(0deg)}
+   to{transform:rotateZ(360deg)}
+}
+
+@keyframes invertBarrelRoll 
+{
+   from{transform:rotateZ(0deg)}
+   to{transform:rotateZ(-360deg)}
+}
+
+
